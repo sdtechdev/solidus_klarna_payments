@@ -24,18 +24,18 @@ Gem::Specification.new do |spec|
 
   spec.files = files.grep_v(%r{^(test|spec|features)/})
   spec.test_files = files.grep(%r{^(test|spec|features)/})
-  spec.bindir = "exe"
+  spec.bindir = 'exe'
   spec.executables = files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ['lib']
 
   spec.add_dependency 'activemerchant'
   spec.add_dependency 'deface'
   spec.add_dependency 'klarna_proxy'
-  spec.add_dependency 'solidus_core', ['>= 2.0.0', '< 4']
-  spec.add_dependency 'solidus_support', '~> 0.8'
+  spec.add_dependency 'solidus_core', ['>= 2.7.4']
+  spec.add_dependency 'solidus_support', '>= 0.1.3'
 
+  spec.add_development_dependency 'pry-rails'
   spec.add_development_dependency 'solidus_dev_support'
   spec.add_development_dependency 'vcr'
   spec.add_development_dependency 'webmock'
-  spec.add_development_dependency 'pry-rails'
 end
