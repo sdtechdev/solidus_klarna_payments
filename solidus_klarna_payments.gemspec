@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'activemerchant'
   spec.add_dependency 'deface'
   spec.add_dependency 'klarna_proxy'
-  spec.add_dependency 'solidus_core', ['>= 2.0.0', '< 5']
+  spec.add_dependency 'solidus_core', ['>= 2.0.0', '< 6']
   spec.add_dependency 'solidus_support', '~> 0.9'
 
   spec.add_development_dependency 'pry-rails'
